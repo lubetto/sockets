@@ -2,8 +2,8 @@ import socket
 import sys
 import fnmatch
 
-host = '10.0.0.159' # dirección IP del Servidor
-puerto = 8080 # Puerto de conexión
+host = '129.151.100.51' # dirección IP del Servidor
+puerto = 2022 # Puerto de conexión
 mi_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # se crea el objeto Socket de tipo internet(AD_INET) y protocolo tcp/ip(SOCK_STREAM)
 mi_socket.bind((host, puerto )) # establecer la conexion y pasamos los datos de conexión
 mi_socket.listen() # Se coloca a escucha de los clientes
