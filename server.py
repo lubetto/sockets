@@ -2,7 +2,7 @@ import socket
 import sys
 import fnmatch
 
-host = '192.168.1.41' # dirección IP del Servidor
+host = '129.151.109.134' # dirección IP del Servidor
 puerto = 2022 # Puerto de conexión
 mi_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # se crea el objeto Socket de tipo internet(AD_INET) y protocolo tcp/ip(SOCK_STREAM)
 mi_socket.bind((host, puerto )) # establecer la conexion y pasamos los datos de conexión
@@ -44,8 +44,8 @@ while True:
 
             elif opcion == "3":
                 conexion.send("---SALIR---\n".encode('utf-8')) # Envia mensaje al cliente
-                print(mensaje.decode('utf-8') + " Conexion cerrada: ")
+                print(" Cliente desconectado ")
                 break
 
-    finally:
-        conexion.close() # Cierra conexion con el cliente
+    except :
+        conexion.close()
