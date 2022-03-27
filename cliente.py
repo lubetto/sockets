@@ -1,8 +1,8 @@
 import socket
 import sys
 
-host = '192.168.1.41' # dirección IP del Servidor
-puerto = 2022 # Puerto de conexión
+host = '129.151.109.134' # dirección IP del Servidor
+puerto = 8080 # Puerto de conexión
 
 cliente = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # se crea el objeto Socket de tipo internet(AD_INET) y protocolo tcp/ip(SOCK_STREAM)
 cliente.connect((host, puerto))  # establecer la conexion y pasamos los datos de conexión
